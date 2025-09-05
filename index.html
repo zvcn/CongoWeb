@@ -12,81 +12,118 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/C.png" type="image/x-icon">
+
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                scale: 0.5;
+            }
+
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        .block {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    </style>
+<audio hidden autoplay loop>
+    <source src="./audio/Kita.mp3" type="audio/mpeg">
+</audio>
+
 </head>
 
 <body>
-    <div class="navbar">
-        <h1 class="judul animate__animated animate__bounceInDown ">X-CONGO</h1>
-    </div>
-    <div class="navbar2 ">
-        <ul class="nav nav-underline">
-            <li class="nav-item ">
-                <a class="nav-link active text-success nama " aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nama text-light" href="photos.html">Photos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nama text-light" href="schedule.html">Schedule</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nama text-light" href="member.html">Member</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h1 class="selamat animate__animated animate__lightSpeedInRight animate__delay-1s">Selamat datang di website kelas X Congo!</h1>
-        <h2 class="deskripsi animate__animated animate__lightSpeedInLeft animate__delay-2s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, dolor velit autem
-            nesciunt natus adipisci modi placeat labore blanditiis eaque porro officiis neque sunt et quam ipsa debitis
-            sapiente eos.</h2>
-    </div>
-    <div>
-
-        <div class="box ">
-            <h1 class="struktur">Struktur Kelas</h1>
+    <div class="background">
+        <div class-="cont-nav ">
+            <div class="navbar ">
+                <h1 class="judul animate__animated animate__bounceInDown ">X-CONGO</h1>
+            </div>
+            <div class="navbar2  ">
+                <ul class="nav nav-underline">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-warning nama " aria-current="page" href="#">Home</a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nama text-light" href="photos.html">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nama text-light" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nama text-light" href="member.html">Member</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <img src="assets/X-Congo.jpg" alt="Gambar" class="gambar ">
+        <div class="cont-judul animate__animated animate__bounceInLeft">
+            <h2 class="selamat animate__animated animate__lightSpeedInRight animate__delay-1s">Selamat datang di website
+                kelas</h2>
+            <h1 class="isi animate__animated animate__lightSpeedInRight animate__delay-1s">X Congo!</h1>
+            <h2 class="deskripsi animate__animated animate__lightSpeedInRight animate__delay-2s">Lorem ipsum dolor sit
+                amet
+                consectetur adipisicing elit. Sapiente dolores ut ipsum! Cum, quidem enim? Consequuntur quod quidem
+                tempora
+                labore ad harum, dolorem ipsam aliquid iusto. Harum animi facilis debitis.</h2>
         </div>
-        <div class="boxNama ">
-            <h1 class="perangkat">Wali Kelas</h1>
-            <h1 class="nama">Suci Aulia Zahman</h1>
-        </div>
-        <div class="container px-4 text-center ">
-            <div class="row gx-5">
-                <div class="col">
-                    <img src="assets/X-Congo.jpg" alt="Gambar" class="gambar p-3">
-                    <div class="boxNama p-3">
-                        <h1 class="perangkat">Ketua Kelas</h1>
-                        <h1 class="nama">Muhammad Najwan</h1>
+        <div class="cont-struktur">
+            <div class="box block ">
+                <h1 class="struktur">Struktur Kelas</h1>
+            </div>
+            <div class="block">
+                <img src="assets/Bu Cici.jpg" alt="Gambar" class="gambar ">
+            </div>
+            <div class="boxNama block ">
+                <h1 class="perangkat">Wali Kelas</h1>
+                <h1 class="nama">Suci Aulia Zahman</h1>
+            </div>
+            <div class="container px-4 text-center  ">
+                <div class="row gx-5">
+                    <div class="col block">
+                        <img src="assets/Najwan.jpg" alt="Gambar" class="gambar ">
+                        <div class="boxNama block p-3">
+                            <h1 class="perangkat">Ketua Kelas</h1>
+                            <h1 class="nama">Muhammad Najwan</h1>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <img src="assets/X-Congo.jpg" alt="Gambar" class="gambar p-3">
-                    <div class="boxNama p-3">
-                        <h1 class="perangkat">Wakil Ketua Kelas</h1>
-                        <h1 class="nama">Farezna Mimbar</h1>
+                    <div class="col block">
+                        <img src="assets/Farezna.jpg" alt="Gambar" class="gambar ">
+                        <div class="boxNama block p-3">
+                            <h1 class="perangkat">Wakil Ketua Kelas</h1>
+                            <h1 class="nama">Farezna Mimbar</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container px-4 text-center">
-            <div class="row gx-5">
-                <div class="col">
-                    <img src="assets/X-Congo.jpg" alt="Gambar" class="gambar p-3">
-                    <div class="boxNama p-3">
-                        <h1 class="perangkat">Bendahara</h1>
-                        <h1 class="nama">Saskia Mahfuza</h1>
+            <div class="container px-4 text-center">
+                <div class="row gx-5">
+                    <div class="col block">
+                        <img src="assets/Saskia.jpg" alt="Gambar" class="gambar ">
+                        <div class="boxNama block p-3">
+                            <h1 class="perangkat">Bendahara</h1>
+                            <h1 class="nama">Saskia Mahfuza</h1>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <img src="assets/X-Congo.jpg" alt="Gambar" class="gambar p-3">
-                    <div class="boxNama p-3">
-                        <h1 class="perangkat">Sekretaris</h1>
-                        <h1 class="nama">Aira Radhwa</h1>
+                    <div class="col block">
+                        <img src="assets/Aira.jpg" alt="Gambar" class="gambar">
+                        <div class="boxNama block p-3">
+                            <h1 class="perangkat">Sekretaris</h1>
+                            <h1 class="nama">Aira Radhwa</h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,7 +132,7 @@
             <h1 class="footerText">Developed By</h1><br>
             <a href="https://www.instagram.com/zeten.7/?hl=en">Muhammad Zayyan Nurkhairi</a>
             <!-- <h1 class="footerText">Follow Us </h1><br>
-            <a href="https://www.instagram.com/x_.congo/?hl=en">Instagram</a> -->
+                <a href="https://www.instagram.com/x_.congo/?hl=en">Instagram</a> -->
         </div>
 
 
@@ -105,6 +142,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    </div>
 </body>
 
 

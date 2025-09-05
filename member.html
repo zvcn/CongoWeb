@@ -12,264 +12,328 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/C.png" type="image/x-icon">
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                scale: 0.5;
+            }
+
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        .block {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="navbar">
-        <h1 class="judul animate__animated animate__bounceInDown">X-CONGO</h1>
-    </div>
-    <div class="navbar2">
-        <ul class="nav nav-underline">
-            <li class="nav-item">
-                <a class="nav-link nama text-light" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nama text-light" href="photos.html">Photos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nama text-light" href="schedule.html">Schedule</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active text-success nama" aria-current="page" href="member.html">Member</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h1 class="selamat animate__animated animate__lightSpeedInRight animate__delay-1s">Selamat datang di website
-            kelas X Congo!</h1>
-        <h2 class="deskripsi animate__animated animate__lightSpeedInLeft animate__delay-2s">Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Accusamus, dolor velit autem
-            nesciunt natus adipisci modi placeat labore blanditiis eaque porro officiis neque sunt et quam ipsa debitis
-            sapiente eos.</h2>
-    </div>
-    <div class="box">
-        <h1 class="struktur">Anggota Kelas</h1>
-    </div>
-    <!-- cards start -->
-    <div>
-        <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
+    <audio hidden autoplay loop>
+        <source src="./audio/Kita.mp3" type="audio/mpeg">
+    </audio>
+    <div class="background4">
+        <div class="cont-nav">
+            <div class="navbar">
+                <h1 class="judul animate__animated animate__bounceInDown">X-CONGO</h1>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
+            <div class="navbar2">
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link nama text-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nama text-light" href="photos.html">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nama text-light" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning nama" aria-current="page" href="member.html">Member</a>
+                    </li>
+                </ul>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
+            <div class="cont-judul animate__animated animate__bounceInLeft">
+                <h2 class="selamat animate__animated animate__lightSpeedInRight animate__delay-1s">Selamat datang di
+                    website
+                    kelas</h2>
+                <h1 class="isi animate__animated animate__lightSpeedInRight animate__delay-1s">X Congo!</h1>
+                <h2 class="deskripsi animate__animated animate__lightSpeedInRight animate__delay-2s">Lorem ipsum dolor
+                    sit
+                    amet
+                    consectetur adipisicing elit. Sapiente dolores ut ipsum! Cum, quidem enim? Consequuntur quod quidem
+                    tempora
+                    labore ad harum, dolorem ipsam aliquid iusto. Harum animi facilis debitis.</h2>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
+            <div class="cont-struktur ">
+                <div class="box block">
+                    <h1 class="struktur">Anggota Kelas</h1>
                 </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
+                <!-- cards start -->
+                <div>
+                    <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Aqil.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Muhammad Aqil Siraj</h5>
+                                <p class="card-text">"Terus lah menjadi lebih baik dari dirimu yg kemarin."</p>
+                                <a href="https://www.instagram.com/aqilsrj_/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Najwan.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Muhammad Najwan</h5>
+                                <p class="card-text">"Change what you can't accept, and accept what you can't change."
+                                </p>
+                                <a href="https://www.instagram.com/2wann__/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/1.3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Muhammad Zayyan Nurkhairi</h5>
+                                <p class="card-text">"#include
+                                    using namespace std;
+                                    int main() {
+                                    cout << 'Kalau mimpinya mahal, sholatnya jangan ditinggal.' << endl; return 0;
+                                        }"</p>
+                                        <a href="https://www.instagram.com/zeten.7/?hl=en"
+                                            class="btn btn-primary">Follow
+                                            Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Farezna.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Farezna Mimbar</h5>
+                                <p class="card-text">"Jangan takut gagal tapi takutlah ketika kita tidak
+                                    pernah mencoba."
+                                </p>
+                                <a href="https://www.instagram.com/fareznaamimbar/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Rayyan.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rayyan Athaila Alfarizqy</h5>
+                                <p class="card-text">"Walau wajah ku burik namun main ku di bawah terik bukan di bawah
+                                    gemerlap
+                                    lampu
+                                    diskotik."</p>
+                                <a href="" class="btn btn-primary">Follow Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Rifqi.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rifqi Ar-Rayyan</h5>
+                                <p class="card-text">"Di dunia ini, tidak ada yang namanya orang bodoh yang ada hanyalah
+                                    orang yang
+                                    tidak ingin belajar."</p>
+                                <a href="https://www.instagram.com/arrayanmrifqi/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Ibni.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Muhammad Ibni Rafif</h5>
+                                <p class="card-text">"Be the reason someone had a good day."
+                                </p>
+                                <a href="https://www.instagram.com/usersabernanas/?hl=en" class="btn btn-primary">Follow
+                                    instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Syamil.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Syamil Putra Rahman</h5>
+                                <p class="card-text">"Terus terang tapi jangan gelap."</p>
+                                <a href="https://www.instagram.com/syam_putrr/?hl=en" class="btn btn-primary">Follow
+                                    instagram!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Niko.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Muhammad Hayza Razqa Iskandar</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    cards content.</p>
+                                <a href="https://www.instagram.com/periwinkleniko/?hl=en" class="btn btn-primary">Follow
+                                    instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nadhif Attaqa</h5>
+                                <p class="card-text">Minta fotonya dong.</p>
+                                <a href="#" class="btn btn-primary">Follow instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Iren.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Qoireen Mumtaz</h5>
+                                <p class="card-text">"Everything you lose is a step you take."</p>
+                                <a href="https://www.instagram.com/rrenmmtaz/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Mimi.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Safna Ilmy Tuahmico</h5>
+                                <p class="card-text">"We can't skip the hard part because it's gonna help us grow."</p>
+                                <a href="https://www.instagram.com/safnailmythmco/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Raisya.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Raisya Dwana Rizkya</h5>
+                                <p class="card-text">"Working hard in silence, let your success become
+                                    everyone's noise."
+                                </p>
+                                <a href="https://www.instagram.com/raisyadwanaa_?igsh=NjFiazV1bnl0czJ2"
+                                    class="btn btn-primary">
+                                    Follow Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Aira.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Aira Radhwa</h5>
+                                <p class="card-text">"You’re human, you’re allowed to fail, as long as you learn
+                                    from your mistakes."</p>
+                                <a href="https://www.instagram.com/aira_lvrdh/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Mutia.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Salwa Meutia Ghaisani</h5>
+                                <p class="card-text">"Always be grateful for what you have."</p>
+                                <a href="https://www.instagram.com/meuutiaa_/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Disya.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cut Disya Athifah</h5>
+                                <p class="card-text">"We're all chasin' after our ends."</p>
+                                <a href="https://www.instagram.com/disyaathf/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Rauza.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rauzatul Azva Nabila</h5>
+                                <p class="card-text">"Akan banyak ke gagalan yang kamu lewati, juga akan banyak usaha
+                                    yang
+                                    kamu
+                                    lakukan, lakukanlah dengan perlahan agar membuahkan hasil yang terbaik."</p>
+                                <a href="https://www.instagram.com/rauza_o_/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Zaira.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Aninda Zaira</h5>
+                                <p class="card-text">"We've been trying so hard to erase our problems, yet at times, the
+                                    only thing
+                                    left is to accept them."</p>
+                                <a href="https://www.instagram.com/anndzzaiyra_/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Ahsha.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ahsha Fajri Lathifa</h5>
+                                <p class="card-text">"One day i'll stop falling in love with you, someday someone Will
+                                    like
+                                    me
+                                    like i like you."</p>
+                                <a href="https://www.instagram.com/p4wshaa_/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Alisha.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Alisha Fathin Nadhira</h5>
+                                <p class="card-text">"Imma unicorn #wolfgang 🤭😜
+                                    "</p>
+                                <a href="https://www.instagram.com/ozzierf/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Pocut.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Potjut Malika Azalea</h5>
+                                <p class="card-text">"Stroberi campur apel, sorry gak level"</p>
+                                <a href="https://www.instagram.com/malickapotjut/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                        <div class="card block" style="width: 18rem;">
+                            <img src="assets/Saskia.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Saskia Mahfuza</h5>
+                                <p class="card-text">"Kita tidak akan menang jika kita tidak percaya bahwa kita bisa,
+                                    believe in yourself."</p>
+                                <a href="https://www.instagram.com/_saskiamhfza_/?hl=en" class="btn btn-primary">Follow
+                                    Instagram!</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/Zayyan.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Muhammad Zayyan Nurkhairi</h5>
-                    <p class="card-text">"Pelajar Seumur Hidup."</p>
-                    <a href="https://www.instagram.com/zeten.7/?hl=en" class="btn btn-success">Follow Instagram!</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center gap-1 flex-wrap my-5">
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/X-Congo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- cards end -->
-    <div class="footer">
-        <h1 class="footerText">Developed By</h1><br>
-        <a href="https://www.instagram.com/zeten.7/?hl=en">Muhammad Zayyan Nurkhairi</a>
-        <!-- <h1 class="footerText">Follow Us </h1><br>
+                <!-- cards end -->
+                <div class="footer">
+                    <h1 class="footerText">Developed By</h1><br>
+                    <a href="https://www.instagram.com/zeten.7/?hl=en">Muhammad Zayyan Nurkhairi</a>
+                    <!-- <h1 class="footerText">Follow Us </h1><br>
                     <a href="https://www.instagram.com/x_.congo/?hl=en">Instagram</a> -->
+                </div>
+            </div>
+        </div>
     </div>
-
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

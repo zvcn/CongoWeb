@@ -12,130 +12,174 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/C.png" type="image/x-icon">
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                scale: 0.5;
+            }
+
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        .block {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="navbar">
-        <h1 class="judul animate__animated animate__bounceInDown">X-CONGO</h1>
-    </div>
-    <div class="navbar2">
-        <ul class="nav nav-underline">
-            <li class="nav-item">
-                <a class="nav-link nama text-light" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active text-success nama" aria-current="page" href="photos.html">Photos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nama text-light" href="schedule.html">Schedule</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nama text-light" href="member.html">Member</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h1 class="selamat animate__animated animate__lightSpeedInRight animate__delay-1s">Selamat datang di website kelas X Congo!</h1>
-        <h2 class="deskripsi animate__animated animate__lightSpeedInLeft animate__delay-2s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, dolor velit autem
-            nesciunt natus adipisci modi placeat labore blanditiis eaque porro officiis neque sunt et quam ipsa debitis
-            sapiente eos.</h2>
-    </div>
+    <audio hidden autoplay loop>
+        <source src="./audio/Kita.mp3" type="audio/mpeg">
+    </audio>
+    <div class="background2">
+        <div class="cont-nav">
+            <div class="navbar">
+                <h1 class="judul animate__animated animate__bounceInDown">X-CONGO</h1>
+            </div>
+            <div class="navbar2">
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link nama text-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning nama" aria-current="page" href="photos.html">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nama text-light" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nama text-light" href="member.html">Member</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cont-judul animate__animated animate__bounceInLeft">
+                <h2 class="selamat animate__animated animate__lightSpeedInRight animate__delay-1s">Selamat datang di
+                    website
+                    kelas</h2>
+                <h1 class="isi animate__animated animate__lightSpeedInRight animate__delay-1s">X Congo!</h1>
+                <h2 class="deskripsi animate__animated animate__lightSpeedInRight animate__delay-2s">Lorem ipsum dolor
+                    sit
+                    amet
+                    consectetur adipisicing elit. Sapiente dolores ut ipsum! Cum, quidem enim? Consequuntur quod quidem
+                    tempora
+                    labore ad harum, dolorem ipsam aliquid iusto. Harum animi facilis debitis.</h2>
+            </div>
+            <div class="cont-struktur">
 
-    <div class="boxPhotos">
-        <h1 class="struktur">Our Photos</h1>
-    </div>
+                <div class="boxPhotos block">
+                    <h1 class="struktur">Our Photos</h1>
+                </div>
 
-    <div>
-        <div class="card-group">
-            <div class="card card text-bg-dark mb-2 kotak">
-                <img src="assets/1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <div>
+                    <div class="card-group ">
+                        <div class="card card text-bg-dark mb-2 kotak block">
+                            <img src="assets/1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card card text-bg-dark mb-2 kotak block">
+                            <img src="assets/2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional
+                                    content.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card card text-bg-dark mb-2 kotak block">
+                            <img src="assets/3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This card has even longer content than the first to show that
+                                    equal
+                                    height action.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CAROUSEL START -->
+                    <div class="container px-4 text-center block">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/4.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/5.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/6.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- CAROUSEL END -->
                 </div>
             </div>
-            <div class="card card text-bg-dark mb-2 kotak">
-                <img src="assets/2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                        content.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
+            <div class="footer">
+                <h1 class="footerText">Developed By</h1><br>
+                <a href="https://www.instagram.com/zeten.7/?hl=en">Muhammad Zayyan Nurkhairi</a>
+                <!-- <h1 class="footerText">Follow Us </h1><br>
+        <a href="https://www.instagram.com/x_.congo/?hl=en">Instagram</a> -->
             </div>
-            <div class="card card text-bg-dark mb-2 kotak">
-                <img src="assets/3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal
-                        height action.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
+
+
         </div>
-        <!-- CAROUSEL START -->
-        <div class="container px-4 text-center">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/5.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/Lhoetech.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/BotolMinum.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        <!-- CAROUSEL END -->
-    </div>
-    <div class="footer">
-        <h1 class="footerText">Developed By</h1><br>
-        <a href="https://www.instagram.com/zeten.7/?hl=en">Muhammad Zayyan Nurkhairi</a>
-        <!-- <h1 class="footerText">Follow Us </h1><br>
-            <a href="https://www.instagram.com/x_.congo/?hl=en">Instagram</a> -->
-    </div>
-
-
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
