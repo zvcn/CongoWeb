@@ -480,6 +480,8 @@ th {
 @media screen and (max-width: 768px) {
     .selamat {
         text-shadow: #05091f 2px 2px 8px;
+        margin-right: 50px;
+        margin-left: 50px;
     }
 }
 @media screen and (max-width: 768px) {
